@@ -6,6 +6,6 @@ project(${PROJECT_NAME} C ASM)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_C_STANDARD 17)
 
-add_library(${PROJECT_NAME} p256-cortex-m4.c p256-cortex-m4-asm-gcc.S)
+add_library(${PROJECT_NAME} p256.cpp p256-cortex-m4.c p256-cortex-m4-asm-gcc.S)
 
 target_include_directories(${PROJECT_NAME} PUBLIC Inc)
